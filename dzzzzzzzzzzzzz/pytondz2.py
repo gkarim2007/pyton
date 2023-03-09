@@ -1,4 +1,4 @@
-
 a=int(input())
-b=int(input())
-print((a * b) / 2)
+print(a*10)
+print(a*100)
+print(a*1000)

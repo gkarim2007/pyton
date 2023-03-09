@@ -1,4 +1,5 @@
-print("Life is what happens")
-print("\twhen")
-print("\t\tyou’re busy making other plans")
-print("\t\t\t\t\tJohn Lennon")
+print("пишите с пробелами")
+a=(input())
+
+print(a.split(" "))
+print( a[3],a[2],a[1],a[0] )

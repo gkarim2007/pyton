@@ -1,3 +1,3 @@
-print("To be")
-print("or not")
-print("to be")
+a=int(input())
+b=int(input())
+print((a*b)/2)
