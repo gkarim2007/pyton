@@ -1,5 +1,7 @@
-a=(input())
+a=int(input())
 b=(input())
-c=(input())
-
-print(a+b+c)
+c=int(input())
+if b=="+":
+    print(a+c)
+if b=="*":
+    print(a*c)
