@@ -1,18 +1,26 @@
 a=int(input())
-c=int(input())
-b=int(input())
 
-
-if b==1:
-    if a>c:
-        print(a)
-    if a<c:
-        print(c)
-        
-if b==2:
-    if a<c:
-        print(a)
-    if a>c:
-        print(c)
-if b==3:
-    print((a+c)/2)
+if a==1:
+    print("Январь")
+if a==2:
+    print("Февраль")
+if a==3:
+    print("Март")
+if a==4:
+    print("Апрель")
+if a==5:
+    print("Май")
+if a==6:
+    print("Июнь")
+if a==7:
+    print("Июль")
+if a==8:
+    print("Август")
+if a==9:
+    print("Сентябрь")
+if a==10:
+    print("Октябрь")
+if a==11:
+    print("Ноябрь")
+if a==12:
+    print("Декабрь")
