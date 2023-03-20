@@ -1,10 +1,9 @@
 a=int(input())
-b=int(input())
 
-for i in range(a, b + 1):
-    if i%3==0:
-        print("Fizz")
-    elif i%5==0:
-        print("Buzz")
-    else:
-        print(i)
+if a<0:
+    print("Number is negative")
+elif a>0:
+    print("Number is positive")
+elif a==0:
+    print("Number is equal to zero")
+    
