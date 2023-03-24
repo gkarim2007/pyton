@@ -1,9 +1,11 @@
+
+
 a=int(input())
 
-if a>1 and a<100:
-    if a%3==0:
-        print("Fizz")
-    if a%5==0:
-        print("Buzz")
-else :
-    print("error 0000")
+b=int(input())
+
+for i in range (a,b+1):
+    if i==3:
+        print(i)
+    if i%3!=0 and i%2!=0:
+        print(i)
