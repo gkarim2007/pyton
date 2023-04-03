@@ -23,7 +23,7 @@ for i in range (size):
         min=i
     if a[i]>max:
         max=i
-    if a[i]>0 and poloj1!=0:
+    if a[i]>0 and poloj1==0:
         poloj1=i
     if a[i]>0:
         poloj2=i
@@ -35,6 +35,6 @@ print(pr)
 for i in range (min - 1,max):
     minmax=minmax*a[i]
 print(minmax)
-for i in range (poloj1-1,poloj2):
+for i in range (poloj1+1,poloj2):
     poloj=poloj+a[i]
 print(poloj)
