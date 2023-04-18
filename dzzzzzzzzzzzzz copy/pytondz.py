@@ -22,4 +22,3 @@ for i in a:
     for i in b:
         if b[i]<a[i]:
             print(b)
-    
