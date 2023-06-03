@@ -1,27 +1,40 @@
-a="ааа а ааа аа"
-a=a.split(" ")
-b=0
-c=0
-d=0
-b1=''
-c1=''
-d1=''
-b=a[0]
+import sqlite3
 
-for i in range(len(a)):
-    if a[i]==b1:
-        b+=1
-    elif a[i]==c1:
-        c+=1
-    else:
-        c1=a[i]
-    if a[i]==d1:
-        d+=1
-    else:
-        c1=a[i]
-if b >= c or d:
-    print(b1)
-if c>=b or d:
-    print(c1)
-if d>=c or b:
-    print(d1)
+
+conn = sqlite3.connect('store.db')
+c = conn.cursor()
+
+
+
+c.execute('''CREATE TABLE IF NOT EXISTS products (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                name TEXT UNIQUE,
+                price INTEGER
+             )''')
+
+c.execute("INSERT OR IGNORE INTO products (name, price) VALUES ('Product 1', 10)")
+c.execute("INSERT OR IGNORE INTO products (name, price) VALUES ('Product 2', 20)")
+c.execute("INSERT OR IGNORE INTO products (name, price) VALUES ('Product 3', 30)")
+
+price=''
+c=0
+name=''
+
+q=0
+conn.commit()
+while True:
+    
+    print('dobavit 1')
+    print('stoimost 2')
+    print('vihod 3')
+    v=input()
+    if v==1:
+        name=input()
+        price=input()
+        c.execute("INSERT OR IGNORE INTO products (name, price) VALUES (?, ?)",(name, price))
+        conn.commit()
+
+        
+    
+
+
